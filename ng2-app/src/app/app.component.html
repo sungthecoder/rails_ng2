@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<nav class="mdl-navigation">
+  <a [routerLink]="links.home">Home</a>
+  <a [routerLink]="links.widgets">Widgets</a>
+</nav>
+
+<router-outlet></router-outlet>
