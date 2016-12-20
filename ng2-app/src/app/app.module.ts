@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 
+import { WidgetsService } from './shared/widgets.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { WidgetsComponent } from './widgets/widgets.component';
     HttpModule,
     Ng2RestAppRoutingModule
   ],
-  providers: [],
+  providers: [
+    WidgetsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
